@@ -42,7 +42,7 @@ section .card .image {
   height: 700px;
   /* width: 50%; */
   border-radius: 20px;
-  padding: px;
+  padding: 40px;
   background: rgb(7, 122, 130);
   /* display: none; */
 }
@@ -68,7 +68,20 @@ section .card .image img {
   background: firebrick;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after{
-    color: aliceblue;
-    font-weight: bold;
+span.swiper-pagination-bullet {
+  height: 7px;
+  width: 20px;
+  border-radius: 25px;
+  background: firebrick;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: aliceblue;
+  font-weight: bold;
+  display: ;
+}
+
+.image:hover + .card {
+  display: ;
 }
