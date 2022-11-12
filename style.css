@@ -85,6 +85,7 @@ div.swiper-button-prev {
   font-weight: bold;
   /* display: none; */
   opacity: 0.5;
+  transition: all 0.3 ease;
 }
 
 div.swiper-button-prev {
