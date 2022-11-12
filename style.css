@@ -16,26 +16,33 @@ body {
   background: floralwhite;
 }
 
-section .container{
-    /* position: relative; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background: rgb(56, 29, 83);
-    border-radius: 25px;
+section .container {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: rgb(240, 235, 246);
+  border-radius: 25px;
 }
 
 .swiper {
-    width: 500px;
-    height: ;
-  }
+  width: 650px;
+  height: ;
+}
+
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 20px;
+  border-radius: 25px;
+  background: firebrick;
+}
 
 section .card .image {
-  height: 440px;
-  width: 440px;
-  /* border-radius: 50%; */
-  padding: 3px;
+  height: 700px;
+  /* width: 50%; */
+  border-radius: 20px;
+  padding: px;
   background: rgb(7, 122, 130);
   /* display: none; */
 }
@@ -43,71 +50,25 @@ section .card .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  /* border-radius: 50%; */
+  border-radius: 20px;
   border: 3px solid white;
 }
 
 .card {
-    position: relative;
+  position: relative;
   background: rgb(239, 238, 235);
   border-radius: 20px;
   margin: 20px 0;
 }
 
-/* .card .card-content {
-  display: flex;
-  padding: 10px;
-  position: relative;
-} */
-
-.mySlides{
-    display: ;
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 20px;
+  border-radius: 25px;
+  background: firebrick;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 25px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.swiper-button-next:after, .swiper-button-prev:after{
+    color: aliceblue;
+    font-weight: bold;
 }
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-   /* The dots/bullets/indicators */
-   .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
-
-   /* On smaller screens, decrease text size */
-   @media only screen and (max-width: 300px) {
-    .prev,
-    .next,
-    .text {
-      font-size: 11px;
-    }
-  }
