@@ -17,7 +17,6 @@ body {
 }
 
 section .container {
-  /* position: relative; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,19 +41,17 @@ section .container {
 
 section .card .image {
   height: 700px;
-  /* width: 50%; */
+
   border-radius: 20px;
   border: 4px solid wheat;
   padding: 8px;
   background: rgb(251, 254, 254);
-  /* display: none; */
 }
 section .card .image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
-  /* border: 5px solid white; */
 }
 
 .card {
@@ -83,8 +80,7 @@ div.swiper-button-next,
 div.swiper-button-prev {
   color: aliceblue;
   font-weight: bold;
-  /* display: none; */
-  opacity: 0.5;
+  opacity: 0;
   transition: all 0.3 ease;
 }
 
@@ -102,9 +98,7 @@ div.swiper-button-prev:hover {
   color: aliceblue;
 }
 
-/* div.card:hover + div.swiper-button-next {
-  display: block;
+.container:hover div.swiper-button-next,
+.container:hover div.swiper-button-prev {
+  opacity: 1.5;
 }
-div.card:hover + div.swiper-button-prev {
-  display: block;
-} */
